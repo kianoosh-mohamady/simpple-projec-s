@@ -1,0 +1,85 @@
+
+body{
+    background-image: url(https://www.gannett-cdn.com/-mm-/20633832158166c7e630e2110f6d5b4e08bbda9c/c=0-377-1732-1356/local/-/media/2017/09/21/USATODAY/USATODAY/636415913442262218-GettyImages-481013807.jpg);
+    background-size: cover;
+}
+li{
+    color: aliceblue;
+}
+.menu-bar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(0, 0, 127);
+    text-align: center;
+    border-radius: 70%;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar li{
+    width: 150PX;
+    margin: 20PX;
+    height: 45px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.active, .menu-bar ul li:hover{
+    background-color: blue;
+    border-radius: 3px;
+}
+.menu-bar .fa{
+    margin: 8px;
+}
+.menu-sub-1{
+    display: none;
+}
+.menu-bar ul li:hover .menu-sub-1{
+    display: block;
+    position: absolute;
+    background: blue;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menu-bar ul li:hover .menu-sub-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .menu-sub-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .menu-sub-1 ul li:last-child{
+    border-bottom:none;
+}
+.menu-bar ul li:hover .menu-sub-1 ul li a:hover{
+    color: rgb(120, 0, 0);
+}
+.font{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Rubik Distressed', cursive;
+    font-family: 'Square Peg', cursive;
+}
+.size{
+    font-size: 30px;
+}
