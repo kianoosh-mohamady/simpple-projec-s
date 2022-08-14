@@ -1,4 +1,5 @@
 
+
 body{
     background-image: url(https://www.gannett-cdn.com/-mm-/20633832158166c7e630e2110f6d5b4e08bbda9c/c=0-377-1732-1356/local/-/media/2017/09/21/USATODAY/USATODAY/636415913442262218-GettyImages-481013807.jpg);
     background-size: cover;
@@ -39,6 +40,7 @@ li{
 }
 .menu-sub-1{
     display: none;
+    border-radius: 20px;
 }
 .menu-bar ul li:hover .menu-sub-1{
     display: block;
@@ -81,5 +83,18 @@ li{
     font-family: 'Square Peg', cursive;
 }
 .size{
-    font-size: 30px;
+    font-size: 3rem;
 }
+.color{
+    color: yellow;
+}
+.middle{
+    position: absolute;
+    left: 45%;
+    top: 12%;
+}
+.links{
+    text-decoration: none;
+    color: yellow;
+}
+
