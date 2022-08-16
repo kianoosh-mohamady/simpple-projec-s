@@ -1,7 +1,6 @@
 
-
 body{
-    background-image: url(https://www.gannett-cdn.com/-mm-/20633832158166c7e630e2110f6d5b4e08bbda9c/c=0-377-1732-1356/local/-/media/2017/09/21/USATODAY/USATODAY/636415913442262218-GettyImages-481013807.jpg);
+    background-color: hsla(0, 100%, 90%, 0.3);
     background-size: cover;
 }
 li{
@@ -85,16 +84,100 @@ li{
 .size{
     font-size: 3rem;
 }
-.color{
-    color: yellow;
+.links{ 
+   text-decoration: none;
+   color: blue;
 }
 .middle{
     position: absolute;
-    left: 45%;
+    top: 13%;
+    left: 44%;
+    right: 20%;
+    z-index: -1;
+
+}
+.large{
+    font-size: 70px;
+    position: absolute;
+    left: 90%;
     top: 12%;
 }
-.links{
-    text-decoration: none;
-    color: yellow;
+.image{
+    position: relative;
+    width: 420px;
 }
-
+.image-img{
+ display: block;
+ width: 100%;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image-overlay:hover{
+    opacity: 1;
+}
+.image-overlay:hover > * {
+    transform: translateY(0px);
+}
+.image-title{
+    font-size: 2em;
+    font-weight: 500;
+}
+.image-discription{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+  .good{
+    height: 59px;
+  }
+  .text{
+    text-decoration: none;
+    background-color: hsla(0, 100%, 50%, 0.3);
+    color: #ffffff;
+    border-radius: 20PX;
+   text-align: center;
+   position: absolute;
+   top: 24%;
+   left: 16%;
+   right: 16%;
+   z-index: -1;
+  }
+  .text2{
+    text-decoration: none;
+    background-color: hsla(0, 100%, 30%, 0.3);;
+    color: #ffffff;
+    border-radius: 20PX;
+   text-align: center;
+   position: absolute;
+   top: 44.5%;
+   left: 16%;
+   right: 16%;
+   z-index: -1;
+  }
